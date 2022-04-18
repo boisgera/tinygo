@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
 RUN apt-get clean && apt-get update && \
-    apt-get install -y wget gcc gcc-avr avr-libc
+    apt-get install -y make wget gcc gcc-avr avr-libc
 
 ENV GO_RELEASE=1.17.6
 RUN wget https://dl.google.com/go/go${GO_RELEASE}.linux-amd64.tar.gz && \
